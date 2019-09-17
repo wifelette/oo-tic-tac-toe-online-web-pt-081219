@@ -209,8 +209,8 @@ class TicTacToe
         puts "Congratulations O!"
       end
     elsif draw?
-        print "Cat's Game!"        
+        print "Cat's Game!"
     end
-    
+
   end
 end
