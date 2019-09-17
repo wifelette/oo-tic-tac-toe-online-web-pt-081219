@@ -195,7 +195,7 @@ class TicTacToe
         end
       end
     else
-      # play
+      turn
     end
   end
 end
