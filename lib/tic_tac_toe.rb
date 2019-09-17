@@ -183,19 +183,34 @@ class TicTacToe
   end
 
   def play
-    turn
-    if over? == true
-      if draw? == true
-        print "Cat's Game!"
-      elsif won? == true
-        if winner == "X"
-          puts "Congratulations X!"
-        elsif winner == "O"
-          puts "Congratulations O!"
-        end
-      end
-    else
-      # play
+    # turn
+    # if over? == true
+    #   if draw? == true
+    #     print "Cat's Game!"
+    #   elsif won? == true
+    #     if winner == "X"
+    #       puts "Congratulations X!"
+    #     elsif winner == "O"
+    #       puts "Congratulations O!"
+    #     end
+    #   end
+    # else
+    #   # play
+    # end
+
+    until over?
+      turn
     end
+
+    if won?
+      if winner == "X"
+        puts "Congratulations X!"
+      elsif winner == "O"
+        puts "Congratulations O!"
+      end
+    elsif draw?
+        print "Cat's Game!"        
+    end
+    
   end
 end
