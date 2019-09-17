@@ -81,7 +81,7 @@ class TicTacToe
   def turn
     puts "Hi! What spot?"
     raw_input = gets.chomp
-    binding.pry
+    # binding.pry
     input = input_to_index(raw_input)
     if input == nil
       puts "That's not a valid move. Try again?"
