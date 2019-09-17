@@ -87,7 +87,7 @@ class TicTacToe
       puts "That's not a valid move. Try again?"
       turn
     elsif valid_move?(input) == true
-      move(input)
+      move(input, current_player)
       display_board
     else
       puts "Nope! Taken. Try another spot?"
