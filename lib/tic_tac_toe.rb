@@ -93,7 +93,6 @@ class TicTacToe
       puts "Nope! Taken. Try another spot?"
       turn
     end
-    current_player
   end
 
   def turn_count
